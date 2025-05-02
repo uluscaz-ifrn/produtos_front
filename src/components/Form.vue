@@ -15,7 +15,7 @@ function emitirProduto() {
 }
 </script>
 <template>
-  <form @submit="emitirProduto">
+  <form @submit.prevent="emitirProduto">
     <input type="text" class="form-control mb-2" placeholder="Produto" v-model="produto.nome" />
     <input type="number" class="form-control mb-2" placeholder="Preço" v-model="produto.preco" />
     <input type="submit" value="Cadastrar" class="btn btn-primary" />
